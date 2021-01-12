@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'GyeonggiTitle';
+  src: url('GyeonggiTitleB.ttf') format('truetype'),
+       url('GyeonggiTitleB.woff') format('woff'),
+       url('GyeonggiTitleB.woff2') format('woff2');
+  src: url('GyeonggiTitleB.eot');
+  src: url('GyeonggiTitleB.eot?#iefix') format('embedded-opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GyeonggiTitle';
+  src: url('GyeonggiTitleL.ttf') format('truetype'),
+       url('GyeonggiTitleL.woff') format('woff');
+  src: url('GyeonggiTitleL.eot');
+  src: url('GyeonggiTitleL.eot?#iefix') format('embedded-opentype'),
+       url('GyeonggiTitleL.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+} 
+@font-face {
+  font-family: 'GyeonggiTitle';
+  src: url('GyeonggiTitleM.ttf') format('truetype'),
+       url('GyeonggiTitleM.woff') format('woff');
+  src: url('GyeonggiTitleM.eot');
+  src: url('GyeonggiTitleM.eot?#iefix') format('embedded-opentype'),
+       url('GyeonggiTitleM.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+ @font-face {
+  font-family: 'GyeonggiTitle';
+  src: url('GyeonggiTitleV.ttf') format('truetype'),
+       url('GyeonggiTitleV.woff') format('woff');
+  src: url('GyeonggiTitleV.eot');
+  src: url('GyeonggiTitleV.eot?#iefix') format('embedded-opentype'),
+       url('GyeonggiTitleV.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+}
+
