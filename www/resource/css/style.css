@@ -133,6 +133,12 @@
     -ms-transform: translateY(-10px) rotate(45deg);
     transform: translateY(-10px) rotate(45deg); }
 
+#wrap.sub #content-5 {
+  background-color: #f9f2e8; }
+
+#container.sub {
+  padding: 10rem 0; }
+
 /*
 	header
 */
@@ -146,11 +152,11 @@ header {
     justify-content: space-between; }
     header .inner .logo {
       margin-right: auto; }
-    header .inner .search {
+    header .inner .search-head {
       position: relative;
       width: 17.3rem;
       margin-left: auto; }
-      header .inner .search input {
+      header .inner .search-head input {
         width: 100%;
         height: 3.7rem;
         color: #fff;
@@ -160,7 +166,7 @@ header {
         box-shadow: none;
         border-radius: 1.85rem;
         background-color: #786c67; }
-      header .inner .search button {
+      header .inner .search-head button {
         position: absolute;
         top: 50%;
         left: 0px;
@@ -680,6 +686,218 @@ footer {
         letter-spacing: -1.5px;
         color: #4c3434; }
 
+/*
+	Sub-page
+*/
+#sub-bnnr {
+  overflow: hidden;
+  position: relative; }
+  #sub-bnnr img {
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); }
+  #sub-bnnr h2 {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%); }
+    #sub-bnnr h2 small {
+      font-family: 'Noto Sans KR';
+      font-size: 2rem;
+      font-weight: 300;
+      line-height: 1.6;
+      letter-spacing: -1.5px;
+      color: #d8bfb1; }
+    #sub-bnnr h2 span {
+      font-size: 3rem;
+      font-weight: normal;
+      line-height: 1.27;
+      letter-spacing: -0.75px;
+      color: #ffffff; }
+
+#location {
+  border-bottom: 1px solid #ddd;
+  background-color: #fff; }
+  #location .inner {
+    display: flex;
+    max-width: 130rem;
+    padding: 0; }
+  #location .home {
+    display: inline-block;
+    width: 5.7rem;
+    height: 5.7rem;
+    text-indent: -9999px;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    background: url("/resource/images/loc-home.png") no-repeat 50% 50%; }
+  #location .depth {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 31.2rem;
+    border-right: 1px solid #ddd;
+    z-index: 2; }
+    #location .depth:after {
+      position: absolute;
+      top: 50%;
+      right: 2rem;
+      display: block;
+      width: 9px;
+      height: 5px;
+      background: url("/resource/images/drop-arrow.png") no-repeat 50% 50%;
+      transform: translateY(-50%);
+      content: ''; }
+    #location .depth:hover {
+      overflow: inherit; }
+      #location .depth:hover p:after {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #ddd;
+        z-index: 3;
+        content: ''; }
+      #location .depth:hover ul {
+        bottom: -100%; }
+    #location .depth p {
+      padding: 0 2rem;
+      color: #333;
+      font-family: 'Noto Sans KR';
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 5.7rem;
+      box-sizing: border-box;
+      background-color: #fff;
+      cursor: pointer; }
+    #location .depth ul {
+      position: absolute;
+      bottom: 0;
+      left: -1px;
+      width: 100%;
+      border: 1px solid #ddd;
+      border-top: none;
+      background-color: #fff;
+      transition: all 0.2s;
+      z-index: -1; }
+      #location .depth ul li a {
+        display: block;
+        margin-top: 1px;
+        padding: 0 2rem;
+        color: #333;
+        font-family: 'Noto Sans KR';
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: 5.7rem;
+        border-top: 1px solid #ddd;
+        box-sizing: border-box; }
+
+.page-tit {
+  margin-bottom: 6rem;
+  font-size: 3.8rem;
+  font-weight: normal;
+  line-height: 1.32;
+  letter-spacing: -0.95px;
+  color: #333333; }
+
+.board-post {
+  width: calc(100% + 2rem);
+  margin-left: -1rem;
+  font-family: 'Noto Sans KR'; }
+  .board-post > .list {
+    display: flex;
+    flex-wrap: wrap; }
+    .board-post > .list > li {
+      width: calc(25% - 2rem);
+      margin: 0 1rem 3rem;
+      border: 1px solid #ddd;
+      box-sizing: border-box; }
+  .board-post .panel {
+    display: block; }
+    .board-post .panel:hover .overlay {
+      opacity: 1; }
+  .board-post .picture {
+    position: relative;
+    background-color: #fbfbfb;
+    background-image: url(../images/no-image.jpg);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow: hidden; }
+    .board-post .picture:after {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 60.39886%; }
+    .board-post .picture img {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      z-index: 1; }
+  .board-post .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.35);
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 250ms;
+    -webkit-transition: opacity 250ms; }
+  .board-post .info {
+    padding: 1.5rem;
+    box-sizing: border-box; }
+    .board-post .info > .subject {
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 2.6rem;
+      letter-spacing: -0.045em;
+      color: #333;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden; }
+    .board-post .info > .contents {
+      margin: 0.6rem 0 0.9rem;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2rem;
+      letter-spacing: -0.05em;
+      color: #333; }
+    .board-post .info > .media {
+      float: left;
+      padding-right: 2.1rem;
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2.4rem;
+      letter-spacing: -0.05em;
+      color: #666; }
+      .board-post .info > .media:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0.6rem;
+        right: 1rem;
+        width: 0.1rem;
+        height: 1.3rem;
+        background-color: #ddd; }
+    .board-post .info > .date {
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 2.4rem;
+      letter-spacing: -0.05em;
+      color: #999; }
+
 @media screen and (max-width: 1260px) {
   #wrap {
     margin-top: 9.6rem; }
@@ -765,7 +983,11 @@ footer {
         #content-2 ul li a > img {
           width: 100%; }
       #content-2 ul li p {
-        margin-bottom: 2rem; } }
+        margin-bottom: 2rem; }
+
+  .board-post > .list > li {
+    width: calc(33.33% - 2rem);
+    margin: 0 1rem 3rem; } }
 @media screen and (max-width: 1024px) {
   .tab-show {
     display: initial; }
@@ -858,7 +1080,14 @@ footer {
     #content-6 ul li:nth-of-type(4), #content-6 ul li:nth-of-type(5) {
       display: none; }
     #content-6 ul li a {
-      width: 100%; } }
+      width: 100%; }
+
+  .board-post {
+    width: 100%;
+    margin-left: 0; }
+    .board-post > .list > li {
+      width: calc(50% - 2rem);
+      margin: 0 1rem 3rem; } }
 @media screen and (max-width: 768px) {
   .mb-show {
     display: initial; }
@@ -866,7 +1095,10 @@ footer {
   .mb-hide {
     display: none; }
 
-  header .inner .search {
+  #container.sub {
+    padding: 6rem 0; }
+
+  header .inner .search-head {
     display: none; }
 
   #main-slide .swiper-slide .text {
@@ -886,7 +1118,27 @@ footer {
       width: 100%; }
 
   #content-4 .text h2 {
-    line-height: 1.4; } }
+    line-height: 1.4; }
+
+  #content-5 {
+    padding-bottom: 0; }
+    #content-5 h2 {
+      margin-bottom: 0; }
+    #content-5 ul {
+      transform: scale(0.8); }
+
+  .page-tit {
+    margin-bottom: 3rem; }
+
+  #sub-bnnr img {
+    height: 17.75rem; }
+
+  #location .home {
+    display: none; }
+  #location .depth {
+    max-width: 50%; }
+    #location .depth.depth-2 {
+      border-right: 0; } }
 @media screen and (max-width: 720px) {
   header .inner {
     padding-left: 3rem; }

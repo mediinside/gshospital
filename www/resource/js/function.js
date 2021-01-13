@@ -1,5 +1,38 @@
 $(function(){
-
+	var swiper1 = new Swiper('.mini .swiper-container', {
+		slidesPerView: 1,
+		spaceBetween: 14,
+		loop: true,
+		speed: 600,
+		autoplay: {
+			delay: 3500,
+			disableOnInteraction: false,
+		},
+		parallax: true,
+		navigation: {
+			nextEl: '.mini .swiper-button-next',
+			prevEl: '.mini .swiper-button-prev',
+		}
+	});
+	var swiper2 = new Swiper('#main-slide .swiper-container', {
+		slidesPerView: 1,
+		spaceBetween: 14,
+		loop: true,
+		speed: 600,
+		autoplay: {
+			delay: 3500,
+			disableOnInteraction: false,
+		},
+		parallax: true,
+		navigation: {
+			nextEl: '#main-slide .swiper-button-next',
+			prevEl: '#main-slide .swiper-button-prev',
+		},
+		pagination: {
+			el: '#main-slide .swiper-pagination',
+			clickable: true,
+		},
+	});
 });
 
 $(window).on("load resize",function(){
@@ -13,3 +46,4 @@ $(window).on("load resize",function(){
 		})
 	}
 });
+
