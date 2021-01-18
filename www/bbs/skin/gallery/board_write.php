@@ -4,19 +4,14 @@
 <input type="hidden" name="jb_bruse_check" value="Y" checked>
 <input type="hidden" name="img_full_name" id="img_full_name" />
 <input type="hidden" name="upfolder" id="upfolder" value="jb_<?=$jb_code?>" />
-<div class="cont-tit" style="opacity: 0;display: none;">
-    <h3>글쓰기</h3>
-</div>
-<div class="s-inner">
-    <form name="frm_Board" id="frm_Board" action="" method="post" enctype="multipart/form-data">
-
-        <div class="tableType-01 green">
-            <table width="100%" class="writeType">
-                <colgroup>
-                    <col width="15%">
-                    <col width="*">
-                </colgroup>
-                <tbody>
+                <h3 class="page-tit">공지사항</h3>
+                <div class="tableType-01 black consended">
+					<table width="100%" class="writeType">
+						<colgroup>
+							<col width="15%">
+							<col width="*">
+						</colgroup>
+						<tbody>
                     <tr>
                         <th scope="row">제 목</th>
                         <td><input type="text" class="txtInput" style="width:100%;" id="jb_title" name="jb_title"></td>
@@ -102,13 +97,11 @@
                 </tbody>
             </table>
             <div id="btn-box" class="center">
-                <a href="#none" class="btn bg-deepblue" id="img_submit">확인</a>
-                <a href="javascript:history.go(-1);" class="btn bg-red">취소</a>
+                <a href="#none" class="btn bg-lightgreen" id="img_submit">확인</a>
+				<a href="javascript:history.go(-1);" class="btn bg-puple">취소</a>
             </div>
         </div>
     </form>
-</div>
-</section>
 <!-- //end #container -->
 <script type="text/javascript">
 	var oEditors = [];

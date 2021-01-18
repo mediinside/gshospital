@@ -1,4 +1,4 @@
-    <h3 class="page-tit">공지사항</h3>	         
+    <h3 class="page-tit"><?=$title?></h3>	         
         <div class="tableType-01 black no-border">
             <table>
                 <colgroup>

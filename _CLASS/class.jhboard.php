@@ -738,8 +738,8 @@ CLASS JHBoard extends Dbconn
 		$args['q_col']			= " A.*, B.jb_content ";
 		$args['q_table']		= "tblJhBoardList A INNER JOIN tblJhBoardDetail B ON A.jb_idx=B.jb_idx";
 		$args['q_where']		= $addQry;
-		if($jb_code == 40){
-			$args['q_order']		= " A.jb_order desc, A.jb_depth DESC";
+		if($jb_code == 50){
+			$args['q_order']		= " A.jb_order desc, A.jb_depth DESC, A.jb_reg_date DESC"; // 답글 있을때
 		}else{
 			$args['q_order']		= " A.jb_order ASC, A.jb_reg_date DESC";
 		}

@@ -121,58 +121,31 @@ if($data_list_cnt > 0) {
 
 
 			$jb_title = $depth_icon . $jb_title . $comment_count . $new_icon; //이미지타이틀 처리
-
-            //공지글여부
-			if($jb_order < 100) {
-                $jb_no ="<td class='num'><img src='/resource/images/notice_icon.png' alt='공지'></td>";
-                $jb_tr ="class='notice'";
-			}else{
-                $jb_no ="<td class='num'> " . $num_idx--. "</td>";
-                $jb_tr ="";
-				}
-
-			if($jb_show =="A"){
-			$jb_no ="<td align='center' class='no'>숨김</td>";
-			}
+			           
+			
 			$img_src = '';
-				if($jb_file_code != '') {
-					$code_file = $GP->UP_IMG_SMARTEDITOR_URL. "/jb_${jb_code}/${jb_file_code}";
-					$img_src = "<img src='" . $code_file. "' >";
-				}else{
-					$img_src = "<img src='/images/common/nk_thumbnail.jpg' alt='이미지 없음'  >";
-				}
-
-                if($jb_code == "10"){$jb_name = "병원소식" ;}
-                elseif($jb_code == "80"){$jb_name = "포토뉴스" ;}
-                elseif($jb_code == "140"){$jb_name = "CH NK" ;}
-                elseif($jb_code == "90"){$jb_name = "언론보도" ;}
-                elseif($jb_code == "50"){$jb_name = "건강정보" ;}
-                elseif($jb_code == "40"){$jb_name = "전문의 상담" ;}
-                elseif($jb_code == "20"){$jb_name = "칭찬합니다" ;}
-                elseif($jb_code == "240"){$jb_name = "질환정보" ;}
-		/*
-        */
-             
-
-
+			if($jb_file_code != '') {
+				$code_file = $GP->UP_IMG_SMARTEDITOR_URL. "/jb_${jb_code}/${jb_file_code}";
+				$img_src = "<img src='" . $code_file. "' class='block'>";
+			}else{
+				$img_src = "<img src='/images/common/nk_thumbnail.jpg' alt='이미지 없음'  >";
+			}
+               
+		
 				echo ("                           
-                            <li>
-                            <a href='" . $get_par . "' >
-									<div class='dec'>
-										<div class='img'>
-                                            ${img_src}
-										</div>
-										<span class='txt'>
-											<b>
-                                              ${jb_title}
-											</b>
-										</span>
-									</div>
-								</a>
-								<a href='" . $get_par . "' class='dec-more'>
-									<span>자세히보기</span>
-								</a>
-							</li>
+
+						<li>
+							<a href='" . $get_par . "' class='panel'>
+								<div class='picture'>
+									${img_src}
+									<div class='overlay'></div>
+								</div>
+								<dl class='info'>
+									<dt class='subject'>${jb_title}</dt>
+									<dd class='date'>${jb_reg_date}</dd>
+								</dl>
+							</a>
+						</li>
 
 				");
 

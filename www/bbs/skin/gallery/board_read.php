@@ -18,14 +18,7 @@
 								<td><span class="tit">작성자</span> <strong class="mg-l10"><?=$jb_name?></strong></td>
 								<td><span class="tit">조회수</span> <strong class="mg-l10"><?=$jb_see?></strong></td>
 								<td><span class="tit">작성일</span> <strong class="mg-l10"><?=$jb_reg_date?></strong></td>
-							</tr>
-							<?php if($jb_homepage) {?>
-							<!--tr>
-								<td style="text-align:left;" colspan="3">
-                                <span class="tit">링크</span> <?=$jb_homepage?>									
-								</td>
-							</tr-->
-							<?}?>		
+							</tr>							
 							<tr>
 								<td style="text-align:left;" colspan="3">
 									<div class="viewCont">
@@ -33,8 +26,8 @@
 									</div>
 								</td>
 							</tr>
-													
-							<!--<?php if($file_cnt > 0) {?>
+							<!--																				
+							<?php if($file_cnt > 0) {?>
 							<tr>
                                 <td style="text-align:left;" colspan="3">
 									<div class="viewFile">
@@ -62,8 +55,16 @@
 							?>
 									</div>
 								</td>
+							</tr>-->
+							<?}?>
+							<?php if($jb_homepage) {?>
+							<tr>
+								<td style="text-align:left;" colspan="3">																		
+									<img src="/resource/images/link.png" width="24" alt="">&nbsp;
+									<a class="file" href="<?=$jb_homepage?>" target="_blank"><?=$jb_homepage?></a>									                         						
+								</td>
 							</tr>
-							<?}?>-->
+							<?}?>		
 									
 
 						</tbody>
@@ -72,8 +73,8 @@
 						<a href="<?=$get_par1?>" class="btn bg-green">이전글</a>
 						<a href="<?=$get_par2?>" class="btn bg-green">다음글</a>
 						<?if($check_level >= $db_config_data['jba_write_level']) {?>
-						<a href="#none" onclick="javascript:location.href='<?=$get_par?>&jb_mode=tdelete'"  class="btn bg-red" title="삭제">삭제</a>
-						<a href="#\" onclick="javascript:location.href='<?=$get_par?>&jb_mode=tmodify'"  class="btn bg-deepblue" title="수정">수정</a>
+						<a href="#none" onclick="javascript:location.href='<?=$get_par?>&jb_mode=tdelete'"  class="btn bg-lightgreen" title="삭제">삭제</a>
+						<a href="#\" onclick="javascript:location.href='<?=$get_par?>&jb_mode=tmodify'"  class="btn bg-puple" title="수정">수정</a>
 						<?}?>
 						<a href="<?=$index_page?>?jb_code=<?=$jb_code?>&<?=$search_key?>&search_keyword=<?=$search_keyword?>&page=<?=$page?>" class="btn bg-orange">목록</a>
 					</div>

@@ -22,31 +22,15 @@
                 <tr>
                 <th scope="row">작성자</th>
                 <td><input type="text" class="txtInput" title="작성자 입력" style="width:100%;" placeholder="작성자를 입력해 주세요."id="jb_name" name="jb_name" value="<?=$jb_name?>" /></td>
-                </tr>
-                <tr>
-                <th scope="row">공개여부</th>
-                <td>
-                    <!--label><input type="checkbox" class="chk" value="Y" id="jb_secret_check" name="jb_secret_check" <?php if($jb_secret_check == "Y") echo "checked";?> /> 비밀글</label-->
-                                <?
-                    //공지는 관리자만 할 수 있다.
-                    if(isset($check_id) && $check_level >= 9) {
-                    if($jb_order=="50")
-                        $notice_checked=" checked";
-                    else
-                        $notice_checked="";
-                    echo "<label class='noti'><input type=\"checkbox\" name=\"jb_notice_check\" value=\"Y\" class='chk' ${notice_checked}> 공지</label>";
-                    }
-                    ?>
-                </td>
-                </tr>
+                </tr>               
                 <tr>
                     <th scope="row">이메일</th>
                     <td><input type="text" class="txtInput" title="이메일 입력" style="width:100%;" placeholder="이메일을 입력해 주세요." id="jb_email" name="jb_email" value="<?=$jb_email?>" /></td>
                 </tr>
-                <tr>
+                <!--tr>
                     <th scope="row">링크</th>
                     <td><input type="text" class="txtInput" title="링크 입력" placeholder="링크" style="width:100%;" id="jb_homepage" name="jb_homepage" value="<?=$jb_homepage?>" /></td>
-                </tr>                
+                </tr-->                
                 <tr>
                     <th scope="row">첨부파일</th>
                     <td class="files">
@@ -94,8 +78,8 @@
             </tbody>
             </table>
             <div id="btn-box" class="center">
-                <a href="#none" class="btn bg-deepblue" id="img_submit">수정</a>
-                <a href="javascript:history.go(-1);" class="btn bg-red">취소</a>
+                <a href="#none" class="btn bg-lightgreen" id="img_submit">수정</a>
+                <a href="javascript:history.go(-1);" class="btn bg-puple">취소</a>
             </div>
         </div>
     </form>

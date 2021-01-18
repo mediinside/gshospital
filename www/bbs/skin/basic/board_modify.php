@@ -94,8 +94,8 @@
             </tbody>
             </table>
             <div id="btn-box" class="center">
-                <a href="#none" class="btn bg-deepblue" id="img_submit">수정</a>
-                <a href="javascript:history.go(-1);" class="btn bg-red">취소</a>
+                <a href="#none" class="btn bg-lightgreen" id="img_submit">수정</a>
+                <a href="javascript:history.go(-1);" class="btn bg-puple">취소</a>
             </div>
         </div>
     </form>

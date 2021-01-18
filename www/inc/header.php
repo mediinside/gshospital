@@ -80,13 +80,13 @@
 					</dl>
 				</li>
 				<li>
-					<a href="#">커뮤니티</a>
+					<a href="/community/community.php/jb_code=10">커뮤니티</a>
 					<dl>
-						<dd><a href="#">공지사항</a></dd>
-						<dd><a href="#">병원소식</a></dd>
-						<dd><a href="#">환자의 이야기</a></dd>
-						<dd><a href="#">보호자이야기</a></dd>
-						<dd><a href="#">상담센터</a></dd>
+						<dd><a href="/community/community.php?jb_code=10">공지사항</a></dd>
+						<dd><a href="/community/community.php?jb_code=20">병원소식</a></dd>
+						<dd><a href="/community/community.php?jb_code=30">환자의 이야기</a></dd>
+						<dd><a href="/community/community.php?jb_code=40">보호자이야기</a></dd>
+						<dd><a href="/community/community.php?jb_code=50">상담센터</a></dd>
 					</dl>
 				</li>
 				<li>

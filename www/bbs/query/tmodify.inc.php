@@ -57,7 +57,6 @@ for($i=0; $i<$file_cnt; $i++) {
 }
 
 
-
 //자동줄바꿈 체크
 if(!$jb_bruse_check) {
 	$jb_bruse_check = 'N';
@@ -67,7 +66,7 @@ if(!$jb_bruse_check) {
 if(!$jb_secret_check) {
 	$jb_secret_check = 'N';
 }
-	
+
 //공지글
 if($jb_notice_check == "Y") {
 	$jb_order = 50;

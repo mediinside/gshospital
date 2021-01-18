@@ -1,26 +1,15 @@
-<div id="sub-bnnr">
-	<img src="/resource/images/notice-bnnr01.png" alt="">
-	<h2>
-		<small>커뮤니티</small>
-		<span>온라인 상담</span>
-	</h2>
-</div>
 <div id="container-box" class="sub">
 	<section class="container">
 		<?php include_once $GP -> INC_WWW . "/location.php"; ?>
-		<div id="member-box">
-			<h3 class="mem-tit">
-				<img src="/resource/images/rabit.png" alt="" width="100">
-				<span>비밀번호를 입력해주세요!</span>
-				<small>LAPIN OBSTETRICS AND GYNECOLOGY</small>
-			</h3>
-			<form name="frm_pass" id="frm_pass" action="<?=$get_par;?>" method="post">
+		<div id="member-box">			
+			<form name="frm_pass" id="frm_pass" action="<?=$get_par;?>" method="post">                		
+                <span class="form-text">비밀번호를 입력해주세요</span>	              
 				<p class="passSection">
-					<input class="form-control" type="password" name="input_passd" id="input_passd" size=25 maxlength=30 placeholder="비밀번호 입력">
-				</p>
-				<div id="btn-box">
-					<a href="javascript:;" id="pass_submit" class="btn bg-pink">확인</a>
-					<a href="javascript:history.go(-1);"  class="btn bg-red">취소</a>
+					<input class="form-control" type="password" name="input_passd" id="input_passd" maxlength=30 placeholder="비밀번호 입력">
+				</p>             
+				<div id="btn-box" class="center">
+					<a href="javascript:;" id="pass_submit" class="btn bg-lightgreen">확인</a>
+					<a href="javascript:history.go(-1);"  class="btn bg-puple">취소</a>
 				</div>
 			</form>
 		</div>
@@ -31,11 +20,21 @@
 	.passSection {
 		margin-top:30px;
 	}
-	.form-control {
+    .form-text {
 		display: block;
 		width: 100%;
 		max-width:610px;
-		height: 70px;
+		margin:20px auto 8px;	
+		font-size: 20px;
+		line-height: 1.5;
+		text-align: center;
+		color: #444;		
+	}
+	.form-control {
+		display: block;
+		width: 100%;
+		max-width:400px;
+		height: 60px;
 		margin:0 auto 8px;
 		padding: 5px 15px;
 		font-size: 20px;

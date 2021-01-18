@@ -5,7 +5,7 @@ include ($_SERVER['DOCUMENT_ROOT'] . "/_init.php");
 switch ($jb_code)
 {		
 	default :
-		$index_page = "notice.php";	// 기본
+		$index_page = "community.php";	// 기본
 		break;
 }
 

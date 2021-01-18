@@ -48,5 +48,5 @@ unset($key);
 unset($value);
 
 
-$jb_content	.= "\n[ " . $jb_name . " 님의 글 ]\n\n";
+$jb_content	.= "<br>[ " . $jb_name . " 님의 글 ]<br><br>";
 ?>
