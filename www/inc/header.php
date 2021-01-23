@@ -43,10 +43,10 @@
 				<li>
 					<a href="#">시흥소개</a>
 					<dl>
-						<dd><a href="#">병원소개</a></dd>
-						<dd><a href="#">인사말</a></dd>
-						<dd><a href="#">의료진소개</a></dd>
-						<dd><a href="#">오시는길</a></dd>
+						<dd><a href="/intro/page01-01.html">병원소개</a></dd>
+						<dd><a href="/intro/page02.html">인사말</a></dd>
+						<dd><a href="/intro/page03.html">의료진소개</a></dd>
+						<dd><a href="/intro/page01.html">오시는길</a></dd>
 						<dd><a href="#">채용안내</a></dd>
 						<dd><a href="#">시설안내</a></dd>
 					</dl>
@@ -72,11 +72,11 @@
 				<li>
 					<a href="#">전문치료센터</a>
 					<dl>
-						<dd><a href="#">재활치료센터</a></dd>
-						<dd><a href="#">집중관찰병동</a></dd>
-						<dd><a href="#">인공신장센터</a></dd>
-						<dd><a href="#">치매전문병동</a></dd>
-						<dd><a href="#">양한방협진센터</a></dd>
+						<dd><a href="/center/page01.html">재활치료센터</a></dd>
+						<dd><a href="/center/page02.html">집중관찰병동</a></dd>
+						<dd><a href="/center/page03.html">인공신장센터</a></dd>
+						<dd><a href="/center/page04.html">치매전문병동</a></dd>
+						<dd><a href="/center/page05.html">양한방협진센터</a></dd>
 					</dl>
 				</li>
 				<li>

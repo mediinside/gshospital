@@ -2,7 +2,7 @@
 <html lang="ko">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=720px, initial-scale=1.0">
+	<meta name="viewport" content="width=720px">
 	<title>경기도립노인전문시흥병원</title>
 	<link rel="stylesheet" href="/resource/css/reset.css">
 	<link rel="stylesheet" href="/resource/css/style.css">
